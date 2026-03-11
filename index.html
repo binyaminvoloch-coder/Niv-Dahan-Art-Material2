@@ -10,10 +10,10 @@
     
     <title>בוטיק בונים בנחת | Niv Dahan</title>
     
-    <!-- תיאור האתר (מופיע מתחת לכותרת בתוצאות החיפוש של גוגל) -->
+    <!-- תיאור האתר -->
     <meta name="description" content="ניב דהן - בוטיק בונים בנחת. אמן טדלקט מרוקאי בינלאומי ומומחה לטיח מינרלי. התמחות בבנייה טבעית, שימור ושחזור מבנים, ויצירת חללים וגמרים אדריכליים בעבודת יד. Niv Dahan - Moroccan Tadelakt Artist & Natural Building.">
     
-    <!-- מילות מפתח בעברית ובאנגלית לחיפושים -->
+    <!-- מילות מפתח -->
     <meta name="keywords" content="טדלקט, טדלקט מרוקאי, ניב דהן, בוטיק בונים בנחת, טיח מינרלי, טיח טבעי, בנייה טבעית, שימור מבנים, שחזור מבנים, טיח מרוקאי, אדריכלות מרוקאית, טיח סיד, טיח אקולוגי, וואבי סאבי, עבודת יד, קירות נושמים, טיח אסא, טיח אנא, טיח קש קורן, Tadelakt, Moroccan Tadelakt, Niv Dahan, Mineral Plaster, Natural Plaster, Lime Plaster, Natural Building, Wabi Sabi, Architectural Plaster, Restoration, Artisan, Maalem, Marrakech Red">
     
     <!-- הגדרות מחבר ורובוטים של גוגל -->
@@ -24,7 +24,6 @@
     <!-- תגיות לשיתוף בוואטסאפ, פייסבוק ורשתות חברתיות -->
     <!-- ========================================== -->
     
-    <!-- תמונת תצוגה מקדימה לשיתוף (התמונה שביקשת) -->
     <meta property="og:image" content="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/refs/heads/main/50.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,17 +33,15 @@
     <meta property="og:locale" content="he_IL">
     <meta property="og:site_name" content="בוטיק בונים בנחת">
     
-    <!-- תגיות לטוויטר/X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="בוטיק בונים בנחת | Niv Dahan">
     <meta name="twitter:description" content="אמן טדלקט מרוקאי ומומחה לטיח מינרלי ובנייה טבעית.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/refs/heads/main/50.jpg">
 
-    <!-- סמל האתר (Favicon) - מופיע בלשונית הדפדפן העליונה -->
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/main/favicon.png">
 
     <!-- ========================================== -->
-    <!-- קוד Schema של גוגל (עוזר מאוד בדירוג בגוגל) -->
+    <!-- קוד Schema של גוגל -->
     <!-- ========================================== -->
     <script type="application/ld+json">
     {
@@ -77,21 +74,20 @@
       ]
     }
     </script>
-    
-    <!-- סוף אזור SEO -->
-    <!-- ========================================== -->
 
-    <!-- פונטים מרוקאיים קלאסיים וקריאים -->
+    <!-- פונטים -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         :root {
-            --terracotta: #a85c49; /* אדום מרוקאי/טרה קוטה בהיר וחם */
-            --gold: #b8860b; /* זהב חם */
-            --dark-gold: #916c2c;
-            --light-sand: #fdfaf5; /* צבע טיח/חול בהיר מאוד לקופסאות */
-            --text-color: #3e2723; /* חום אדמה עמוק לקריאות מקסימלית במקום שחור */
-            --bg-overlay: rgba(250, 245, 238, 0.88); /* כיסוי חלבי בהיר לתמונות הרקע */
-            --box-shadow: rgba(168, 92, 73, 0.1);
+            --terracotta: #a35038; 
+            --gold: #c39b5b; 
+            --dark-gold: #8c682e;
+            --text-color: #31231e; 
+            /* שכבת זכוכית שקופה המאפשרת לראות את הרקע */
+            --glass-bg: rgba(249, 244, 236, 0.75); 
+            --glass-border: rgba(195, 155, 91, 0.3);
         }
 
         body {
@@ -100,38 +96,25 @@
             line-height: 1.8;
             margin: 0;
             padding: 0;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 400;
-            background-color: #f7f3ec;
+            background-color: #1a1a1a; /* צבע רקע בסיסי כהה לפני שהתמונה נטענת */
         }
 
-        /* --- הגדרות חלוקת הרקעים --- */
+        /* רקעים עם אפקט פאראלקס חי */
         .section-bg-02 {
-            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('02.jpg') center/cover no-repeat fixed;
-            padding: 80px 20px;
-        }
-        
-        .section-bg-02 {
-            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('02.jpg') center/cover no-repeat fixed;
-            padding: 80px 20px;
+            background: url('02.jpg') center/cover no-repeat fixed;
+            padding: 100px 20px;
         }
 
         .section-bg-03 {
-            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('03.jpg') center/cover no-repeat fixed;
-            padding: 80px 20px;
+            background: url('03.jpg') center/cover no-repeat fixed;
+            padding: 100px 20px;
         }
 
         .section-bg-04 {
-            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('04.jpg') center/cover no-repeat fixed;
-            padding: 80px 20px 40px 20px;
-        }
-        
-        /* רקע סיום ליצירת קשר ורשתות */
-        .footer-section {
-            background-color: var(--light-sand);
-            padding: 60px 20px;
-            border-top: 2px solid var(--gold);
-            text-align: center;
+            background: url('04.jpg') center/cover no-repeat fixed;
+            padding: 100px 20px;
         }
 
         .container {
@@ -139,243 +122,323 @@
             margin: 0 auto;
         }
 
-        /* --- עיצוב קופסאות התוכן במראה קשת מורית בהירה --- */
+        /* קופסאות זכוכית בצורת קשת אדריכלית */
         .content-box {
-            background-color: var(--light-sand);
-            padding: 60px 40px;
-            border-radius: 150px 150px 15px 15px; /* צורת קשת מרוקאית */
-            box-shadow: 0 20px 50px var(--box-shadow);
-            margin-bottom: 50px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px); /* אפקט זכוכית חלבית */
+            -webkit-backdrop-filter: blur(12px);
+            padding: 70px 50px;
+            /* צורת קשת מורית עליונה */
+            border-radius: 50% 50% 0 0 / 12% 12% 0 0;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(255,255,255,0.5);
+            margin-bottom: 60px;
             position: relative;
-            border: 2px solid rgba(184, 134, 11, 0.3); /* מסגרת זהב עדינה */
-            text-align: center;
+            border: 1px solid var(--glass-border);
+            border-bottom: 4px solid var(--terracotta);
         }
 
-        /* מסגרת פנימית עדינה מזהב/טרה-קוטה */
+        /* אלמנט עיצובי פנימי של הקשת */
         .content-box::before {
             content: '';
             position: absolute;
-            top: 12px; left: 12px; right: 12px; bottom: 12px;
-            border: 1px solid rgba(168, 92, 73, 0.2);
-            border-radius: 138px 138px 8px 8px;
+            top: 20px; left: 20px; right: 20px; bottom: 0;
+            border-top: 1px solid rgba(163, 80, 56, 0.3);
+            border-radius: 50% 50% 0 0 / 10% 10% 0 0;
             pointer-events: none;
         }
 
-        /* יישור טקסט רגיל לימין בתוך הקופסה הממורכזת */
-        .content-box p, .content-box ul {
-            text-align: right;
+        .content-box p {
+            text-align: justify;
+            text-align-last: right;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.8);
         }
 
-        /* --- אלמנטים מרוקאיים עדינים --- */
-        .moroccan-divider {
-            text-align: center;
-            color: var(--gold);
-            font-size: 24px;
-            margin: 2.5em 0;
-            opacity: 0.8;
-        }
-        .moroccan-divider::after {
-            content: '۞ ✦ ❖ ✦ ۞';
-            letter-spacing: 12px;
-        }
-
-        /* --- טיפוגרפיה מסורתית בהירה --- */
+        /* טיפוגרפיה */
         h1, h2, h3, h4 {
             font-family: 'Frank Ruhl Libre', serif;
             color: var(--terracotta);
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
             text-align: center;
+            text-shadow: 0 2px 4px rgba(255,255,255,0.6);
         }
 
         h1 {
-            font-size: 3.5em;
-            margin-top: 0.2em;
-            margin-bottom: 0.1em;
+            font-size: 4em;
             font-weight: 900;
-            color: var(--terracotta);
+            margin-top: 0;
+            margin-bottom: 0.1em;
+            letter-spacing: -1px;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             font-family: 'Cinzel', serif;
             font-weight: 600;
-            margin-top: 0;
             color: var(--dark-gold);
-            letter-spacing: 2px;
-        }
-
-        .subtitle {
-            text-align: center;
-            font-size: 1.4em;
-            font-weight: 600;
-            margin-bottom: 2em;
-            font-family: 'Cinzel', serif;
-            color: var(--text-color);
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            margin-bottom: 1.5em;
         }
 
         h3 {
-            font-size: 2.2em;
+            font-size: 2.4em;
             font-weight: 700;
-            color: var(--terracotta);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
             position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        
-        h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 20%;
-            right: 20%;
-            height: 1px;
-            background: var(--gold);
+            display: block;
         }
 
         .english-title {
             font-family: 'Cinzel', serif;
             direction: ltr;
             text-align: center;
-            margin-top: 1em;
             color: var(--dark-gold);
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: 800;
-            letter-spacing: 1px;
-        }
-
-        p { margin-bottom: 1.5em; font-weight: 400; }
-
-        ul {
-            list-style-type: none;
-            padding-right: 20px;
-            margin-bottom: 2em;
-        }
-
-        ul li {
-            position: relative;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-
-        ul li::before {
-            content: "۞";
-            color: var(--gold);
-            position: absolute;
-            right: -30px;
-            font-size: 1em;
-            top: 2px;
+            letter-spacing: 2px;
+            margin-bottom: 1em;
         }
 
         .highlight-quote {
             text-align: center;
-            font-size: 1.8em;
+            font-size: 2em;
             font-family: 'Cinzel', serif;
             color: var(--terracotta);
             margin: 2em 0;
             font-weight: 800;
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .highlight-quote::before, .highlight-quote::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .highlight-quote::before { top: 0; }
+        .highlight-quote::after { bottom: 0; }
+
+        /* רשימות מעוצבות */
+        ul {
+            list-style: none;
+            padding-right: 0;
+            margin: 1.5em 0;
         }
 
-        /* --- אקורדיונים --- */
-        details {
-            background-color: #fff;
-            border: 1px solid rgba(168, 92, 73, 0.2);
-            border-radius: 8px;
+        ul li {
+            position: relative;
             margin-bottom: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            padding-right: 35px;
+            font-weight: 600;
         }
 
-        details[open] {
-            box-shadow: 0 8px 20px rgba(168, 92, 73, 0.08);
+        ul li::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--terracotta);
+            border-radius: 50% 50% 0 50%; /* צורת טיפה/עלה מינרלי */
+            transform: rotate(45deg);
+            opacity: 0.8;
+        }
+
+        /* מפריד אדריכלי מותאם אישית (במקום כוכבים) */
+        .arch-divider {
+            width: 100%;
+            height: 50px;
+            margin: 3em 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arch-divider::before {
+            content: '';
+            width: 80px;
+            height: 40px;
+            border: 2px solid var(--gold);
+            border-bottom: none;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+        }
+        .arch-divider::after {
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 1px;
+            background: var(--gold);
+            bottom: 10px;
+        }
+
+        /* ======================================= */
+        /* עיצוב אקורדיונים ברמה גבוהה (יוקרתי)   */
+        /* ======================================= */
+        details.accordion {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(195, 155, 91, 0.4);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        details.accordion[open] {
+            background: rgba(255, 255, 255, 0.85);
             border-color: var(--terracotta);
+            box-shadow: 0 10px 30px rgba(163, 80, 56, 0.1);
         }
 
         summary {
-            padding: 20px 25px;
+            padding: 25px 30px;
             font-size: 1.4em;
             font-weight: 700;
             font-family: 'Frank Ruhl Libre', serif;
-            color: var(--terracotta);
+            color: var(--text-color);
             cursor: pointer;
             list-style: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgba(168, 92, 73, 0.03);
-            border-bottom: 1px solid transparent;
+            outline: none;
         }
 
         summary::-webkit-details-marker {
-            display: none;
+            display: none; /* מסתיר את המשולש של גוגל */
         }
 
-        summary::after {
-            content: '▼';
-            color: var(--gold);
-            font-size: 0.9em;
-            transition: transform 0.4s ease;
+        /* האייקון היוקרתי - מעגל עם פלוס/מינוס */
+        .toggle-icon {
+            width: 35px;
+            height: 35px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.4s ease;
+            flex-shrink: 0;
+            margin-right: 20px;
         }
 
-        details[open] summary::after {
+        .toggle-icon::before, .toggle-icon::after {
+            content: '';
+            position: absolute;
+            background-color: var(--gold);
+            transition: all 0.4s ease;
+        }
+
+        .toggle-icon::before {
+            width: 15px;
+            height: 2px;
+        }
+
+        .toggle-icon::after {
+            width: 2px;
+            height: 15px;
+        }
+
+        /* אנימציה כשהאקורדיון נפתח */
+        details[open] summary .toggle-icon {
             transform: rotate(180deg);
+            background-color: var(--gold);
+            border-color: var(--gold);
         }
 
-        details[open] summary {
-            background-color: rgba(168, 92, 73, 0.08);
-            border-bottom: 1px solid rgba(168, 92, 73, 0.1);
-        }
-
-        .details-content {
-            padding: 25px;
+        details[open] summary .toggle-icon::before, 
+        details[open] summary .toggle-icon::after {
             background-color: #fff;
         }
 
-        /* --- עיצוב כפתורי יצירת קשר --- */
+        details[open] summary .toggle-icon::after {
+            transform: rotate(90deg);
+            opacity: 0; /* הופך למינוס */
+        }
+
+        details[open] summary {
+            color: var(--terracotta);
+            border-bottom: 1px dashed rgba(195, 155, 91, 0.4);
+        }
+
+        .details-content {
+            padding: 30px;
+            background: transparent;
+            animation: slideDown 0.4s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* פוטר ואזור יצירת קשר */
+        .footer-section {
+            background: url('02.jpg') center/bottom cover no-repeat;
+            position: relative;
+        }
+        
+        .footer-overlay {
+            background: rgba(30, 22, 18, 0.9); /* שכבה כהה ואלגנטית */
+            padding: 80px 20px;
+            border-top: 3px solid var(--gold);
+            text-align: center;
+            color: #f7f1e6;
+        }
+
+        .footer-overlay h3 {
+            color: var(--gold);
+            text-shadow: none;
+        }
+
         .social-links {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 20px;
+            margin-top: 40px;
         }
 
         .social-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 25px;
-            background-color: var(--light-sand);
-            color: var(--terracotta);
+            padding: 15px 30px;
+            background: transparent;
+            color: var(--gold);
             text-decoration: none;
             font-weight: 600;
-            border: 1px solid var(--terracotta);
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            font-family: 'Assistant', sans-serif;
+            border: 1px solid var(--gold);
+            border-radius: 0 20px 0 20px; /* צורה אדריכלית עדינה */
+            transition: all 0.4s ease;
+            font-family: 'Cinzel', 'Assistant', sans-serif;
             font-size: 1.1em;
+            letter-spacing: 1px;
         }
 
         .social-btn:hover {
-            background-color: var(--terracotta);
-            color: #fff;
-            box-shadow: 0 5px 15px rgba(168, 92, 73, 0.3);
-            transform: translateY(-2px);
+            background-color: var(--gold);
+            color: #1e1612;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(195, 155, 91, 0.2);
+            border-radius: 20px 0 20px 0;
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2.5em; }
+            h1 { font-size: 2.8em; }
             .content-box { 
-                padding: 40px 20px; 
-                border-radius: 90px 90px 10px 10px;
+                padding: 50px 25px 30px 25px; 
+                border-radius: 50% 50% 0 0 / 8% 8% 0 0;
             }
-            .content-box::before {
-                border-radius: 80px 80px 5px 5px;
-            }
-            summary { font-size: 1.2em; }
-            .social-btn { width: 100%; box-sizing: border-box; }
+            summary { font-size: 1.2em; padding: 20px 15px; }
+            .social-btn { width: 100%; }
         }
     </style>
 </head>
@@ -388,9 +451,9 @@
             <header>
                 <h1>בוטיק בונים בְּנַחַת</h1>
                 <h2>Tadelakt original made in Marrakesh</h2>
-                <div class="subtitle">
+                <div class="english-title" style="margin-bottom: 2em; color: var(--text-color);">
                     Niv Dahan<br>
-                    International Moroccan Tadelakt Artist
+                    <span style="font-size: 0.8em; color: var(--terracotta);">International Moroccan Tadelakt Artist</span>
                 </div>
 
                 <div style="text-align: center; font-size: 1.2em; font-weight: 600; color: var(--text-color);">
@@ -404,7 +467,7 @@
 </div>
 
 <!-- אזור 2: אודות, דרך אישית וחומרים -->
-<div class="section-bg-02">
+<div class="section-bg-03">
     <div class="container">
         <div class="content-box">
             <h3 class="english-title">About / Biography</h3>
@@ -423,7 +486,7 @@
             <p>כל פרויקט מבוצע מתוך כבוד עמוק לחומר, לאדריכלות המקום ולמסורת הבנייה.</p>
             <p>בין אם מדובר בשימור מבנה היסטורי, ביצירת קיר דקורטיבי או בביצוע חללים רטובים – העבודה נעשית מתוך הבנה עמוקה של החומר ושל האופן שבו הוא חי ומתפתח לאורך השנים.</p>
 
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <h3>הדרך האישית</h3>
             <p>שמי ניב דהן.</p>
@@ -436,10 +499,13 @@
             <p>בתוך הדרך הזו יש גם מקום עמוק לאמונה — אמונה בתהליך, באדם, וביכולת של חומר טבעי ומלאכת יד ליצור חללים שיש בהם חיים, רוגע ונוכחות אמיתית.</p>
             <p>החיבור לחומר, לאדמה ולמבנה מאפשר ליצור חללים בעלי עומק, שקט ואופי אמיתי.</p>
 
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <details class="accordion">
-                <summary>תחומי התמחות</summary>
+                <summary>
+                    תחומי התמחות
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <ul>
                         <li>טיח טדלקט מרוקאי מסורתי</li>
@@ -455,7 +521,7 @@
                 </div>
             </details>
 
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <h3 class="english-title">Material Philosophy</h3>
             <p>העבודה עם טיח מינרלי היא הרבה מעבר לעבודת בנייה.<br>זוהי מלאכת יד עתיקה המשלבת אומנות, חומר וזמן.</p>
@@ -464,7 +530,7 @@
             <p>כך נוצרת מערכת יחסים בין האדם, החומר והחלל.</p>
             <p>הקיר אינו רק משטח<br>הוא נוכחות חומרית שמספרת סיפור.</p>
 
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <h3 class="english-title">Natural Building</h3>
             <p>קיר נושם, חומר חי וחלל עם נוכחות.</p>
@@ -473,7 +539,10 @@
             <p>בגישה זו הקיר אינו רק שכבת גמר<br>הוא מערכת חיה ונושמת.</p>
 
             <details class="accordion">
-                <summary>מהי בנייה טבעית ומה יתרונותיה?</summary>
+                <summary>
+                    מהי בנייה טבעית ומה יתרונותיה?
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <p>בנייה טבעית מתבססת על שימוש בחומרים מסורתיים כגון:</p>
                     <ul>
@@ -498,7 +567,10 @@
             </details>
 
             <details class="accordion">
-                <summary><span class="english-title" style="margin:0; font-size: 1em;">Materials</span> - החומרים בהם אנו עובדים</summary>
+                <summary>
+                    <span class="english-title" style="margin:0; font-size: 1em; letter-spacing: 0;">Materials</span> - החומרים בהם אנו עובדים
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <ul>
                         <li>סיד טבעי</li>
@@ -517,13 +589,13 @@
     </div>
 </div>
 
-<!-- אזור 3: טדלקט, זכייה בפרס, וסוגי הטיחים -->
-<div class="section-bg-03">
+<!-- אזור 3: טדלקט, קטלוג והישגים -->
+<div class="section-bg-04">
     <div class="container">
         
         <div class="content-box">
             <h3>טדלקט זוכה בפרסי A’ Design Award 2025</h3>
-            <div class="english-title" style="margin-bottom: 1.5em; font-weight: 800;">
+            <div class="english-title" style="margin-bottom: 1.5em;">
                 Tadelakt in Award-Winning Architecture<br>
                 A’ Design Award 2025
             </div>
@@ -540,10 +612,10 @@
             הערכה מחודשת לחומרים טבעיים ולשיטות בנייה מסורתיות, המשלבות קיימות, עמידות ואיכות אדריכלית.</p>
             <p>במובן זה, ניתן לראות בפרס שניתן ל-Aziz Rest House גם הכרה בטדלקט עצמו – ובטכניקות הבנייה העתיקות המבוססות על סיד טבעי ומלאכת יד.</p>
             
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <h3 class="english-title">Tadelakt</h3>
-            <h4 style="text-align: center;">מסורת של מאות שנים שמיושמת בהווה</h4>
+            <h4 style="text-align: center; color: var(--text-color);">מסורת של מאות שנים שמיושמת בהווה</h4>
             <p>טכניקת הטדלקט אינה רק שיטת טיח — היא מסורת עתיקה של מלאכת יד שעברה מדור לדור במשך מאות שנים במרוקו.</p>
             <p>יישום טדלקט אמיתי דורש הבנה עמוקה של החומר, של הסיד, של המים ושל תנועת היד.<br>
             זהו תהליך מורכב ועדין שבו כל שכבה נבנית בהדרגה באמצעות עבודה ידנית מדויקת, ליטוש באבן ואיטום באמצעות סבון שמן זית טבעי.</p>
@@ -570,7 +642,10 @@
             <p>טדלקט נחשב לאחת מטכניקות הגמר האציליות ביותר בעולם הבנייה המסורתית.</p>
 
             <details class="accordion">
-                <summary>שימושים אדריכליים לטדלקט</summary>
+                <summary>
+                    שימושים אדריכליים לטדלקט
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <ul>
                         <li>מבנים לשימור</li>
@@ -590,7 +665,10 @@
             </details>
 
             <details class="accordion">
-                <summary>תחזוקה ואחריות לטדלקט</summary>
+                <summary>
+                    תחזוקה ואחריות לטדלקט
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <p>תחזוקה שוטפת מתבצעת באמצעות סבון טבעי בלבד, בדרך כלל סבון שמן זית מסורתי, המסייע בשמירה על שכבת ההגנה של החומר.</p>
                     <p>לצורך שימור ארוך טווח ניתן לבצע תחזוקה תקופתית באמצעות שעוות דבורים טבעית, המסייעת להזנת החומר ולהגברת עמידותו.</p>
@@ -607,13 +685,14 @@
             </details>
         </div>
 
-        <div class="moroccan-divider" style="margin: 3em 0;"></div>
-
         <!-- קטלוג הטיחים -->
-        <h2 style="color: var(--terracotta); text-shadow: 1px 1px 5px rgba(255,255,255,0.8); font-size: 2.5em; font-family: 'Frank Ruhl Libre', serif; font-weight: 900; margin-bottom: 30px; text-align: center;">קולקציית הטיחים המינרליים</h2>
+        <h2 style="font-size: 3em; margin: 2em 0 1em 0;">קולקציית הטיחים המינרליים</h2>
 
         <details class="accordion">
-            <summary><span class="english-title" style="margin:0; font-size: 1em;">ASA</span> - טיח אסא</summary>
+            <summary>
+                <span class="english-title" style="margin:0; font-size: 1em; letter-spacing:0;">ASA</span> - טיח אסא
+                <div class="toggle-icon"></div>
+            </summary>
             <div class="details-content">
                 <p>טיח אסא הוא טיח מינרלי טבעי שפותח במיוחד עבור חללים רטובים.</p>
                 <p>הטיח מבוסס על סיד טבעי, חול מינרלי מדורג ותוספים מסורתיים היוצרים מערכת חומר צפופה, עמידה ויציבה לאורך זמן.</p>
@@ -655,7 +734,10 @@
         </details>
 
         <details class="accordion">
-            <summary><span class="english-title" style="margin:0; font-size: 1em;">ANA</span> - טיח אנא</summary>
+            <summary>
+                <span class="english-title" style="margin:0; font-size: 1em; letter-spacing:0;">ANA</span> - טיח אנא
+                <div class="toggle-icon"></div>
+            </summary>
             <div class="details-content">
                 <p>טיח אנא הוא טיח מינרלי אדריכלי המיועד לחללים יבשים ולקירות בעלי נוכחות עיצובית.</p>
                 <p>הפורמולה מבוססת על סיד טבעי וחול מינרלי עדין המאפשרים יצירת משטח בעל עומק חומרי עשיר וטקסטורה אלגנטית.</p>
@@ -699,7 +781,10 @@
         </details>
 
         <details class="accordion">
-            <summary><span class="english-title" style="margin:0; font-size: 1em;">Straw Lime Plaster</span> - טיח קש קורן</summary>
+            <summary>
+                <span class="english-title" style="margin:0; font-size: 1em; letter-spacing:0;">Straw Lime Plaster</span> - טיח קש קורן
+                <div class="toggle-icon"></div>
+            </summary>
             <div class="details-content">
                 <p>טיח קש קורן הוא טיח מינרלי טבעי בעל אופי כפרי וחם.</p>
                 <p>הטיח משלב סיד טבעי, חול מינרלי וסיבים טבעיים כגון קש או סיבי המפ היוצרים מבנה חומר עשיר וטקסטורה עמוקה.</p>
@@ -743,14 +828,17 @@
             </div>
         </details>
 
-        <div class="content-box" style="margin-top: 60px;">
+        <div class="content-box" style="margin-top: 80px;">
             <h3 class="english-title">Architectural Elements</h3>
             <p>בנוסף לעבודות קיר מסורתיות, ניתן ליצור גם אלמנטים אדריכליים ורהיטים בעבודת יד מטיח מרוקאי עד לפורמולות הטיח הייחודיות המיוצרות בבוטיק בונים בנחת.</p>
             <p>העבודה עם סיד טבעי ועם הפורמולות המינרליות המפותחות בייצור עצמי מאפשרת יצירת אובייקטים אדריכליים בעלי עומק חומרי טבעי ונוכחות ייחודית בחלל.</p>
             <p>כל אלמנט נוצר בעבודת יד כחלק מתהליך חומרי מדויק, המשלב מסורות בנייה עתיקות עם גישה אדריכלית עכשווית.</p>
             
-            <details class="accordion">
-                <summary>באמצעות טדלקט ופורמולות הטיח המינרליות ניתן ליצור:</summary>
+            <details class="accordion" style="margin-top: 30px;">
+                <summary>
+                    באמצעות טדלקט ופורמולות הטיח המינרליות ניתן ליצור:
+                    <div class="toggle-icon"></div>
+                </summary>
                 <div class="details-content">
                     <ul>
                         <li>כיורים ומשטחי רחצה בעבודת יד</li>
@@ -765,7 +853,7 @@
                         <li>כלי סניטריה בעבודת יד</li>
                         <li>אלמנטים אדריכליים לבנייה סביבתית</li>
                     </ul>
-                    <p>אלמנטים אלו משתלבים כחלק בלתי נפרד מהקיר ומהשפה החומרית של החלל, ויוצרים אדריכלות בעלת עומק, חומריות ואופי ייחודי</p>
+                    <p>אלמנטים אלו משתלבים כחלק בלתי נפרד מהקיר ומהשפה החומרית של החלל, ויוצרים אדריכלות בעלת עומק, חומריות ואופי ייחודי.</p>
                 </div>
             </details>
             
@@ -776,7 +864,7 @@
 </div>
 
 <!-- אזור 4: ליווי מקצועי -->
-<div class="section-bg-04">
+<div class="section-bg-02">
     <div class="container">
         <div class="content-box">
             <h3>ליווי מקצועי בבנייה טבעית</h3>
@@ -789,7 +877,10 @@
 
             <div style="margin-top: 40px;">
                 <details class="accordion">
-                    <summary>ייעוץ מקצועי</summary>
+                    <summary>
+                        ייעוץ מקצועי
+                        <div class="toggle-icon"></div>
+                    </summary>
                     <div class="details-content">
                         <ul>
                             <li>פגישות ייעוץ מקצועיות בתחום הבנייה הטבעית</li>
@@ -805,7 +896,10 @@
                 </details>
 
                 <details class="accordion">
-                    <summary>הדרכות מקצועיות</summary>
+                    <summary>
+                        הדרכות מקצועיות
+                        <div class="toggle-icon"></div>
+                    </summary>
                     <div class="details-content">
                         <p>הדרכות עומק בתחום הבנייה הטבעית וטיחי הסיד המסורתיים.</p>
                         <p>ההדרכות משלבות ידע תיאורטי יחד עם הבנה חומרית ומעשית של תהליכי העבודה עם סיד טבעי, אדמה, סיבים טבעיים וחומרים מינרליים.</p>
@@ -823,7 +917,10 @@
                 </details>
 
                 <details class="accordion">
-                    <summary>סדנאות מעשיות</summary>
+                    <summary>
+                        סדנאות מעשיות
+                        <div class="toggle-icon"></div>
+                    </summary>
                     <div class="details-content">
                         <p>סדנאות עומק מעשיות המאפשרות חוויה ישירה של העבודה עם חומרים טבעיים.</p>
                         <p>הסדנאות מיועדות לאנשים המעוניינים להכיר את עולם הבנייה הטבעית דרך עבודה בידיים, הבנת החומר והיכרות עם טכניקות מסורתיות.</p>
@@ -840,7 +937,10 @@
                 </details>
 
                 <details class="accordion">
-                    <summary>ליווי בינלאומי</summary>
+                    <summary>
+                        ליווי בינלאומי
+                        <div class="toggle-icon"></div>
+                    </summary>
                     <div class="details-content">
                         <p>אנו מציעים גם ליווי מקצועי לפרויקטים בינלאומיים בתחום הבנייה הטבעית.</p>
                         <p>הליווי כולל:</p>
@@ -855,7 +955,7 @@
                 </details>
             </div>
 
-            <div class="moroccan-divider"></div>
+            <div class="arch-divider"></div>
 
             <h4 style="font-size: 1.8em;">פילוסופיית העבודה</h4>
             <p>עבודה עם חומרים טבעיים אינה רק טכניקה — היא דרך להבין את המבנה, את האקלים ואת החומר עצמו.</p>
@@ -865,44 +965,43 @@
     </div>
 </div>
 
-<!-- אזור צור קשר ורשתות (כולל פייסבוק) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<!-- אזור צור קשר (פוטר יוקרתי) -->
 <div class="footer-section">
-    <div class="container">
-        <h3 style="text-align: center;">צור קשר | Contact Us</h3>
-        <p style="text-align: center; color: var(--text-color); margin-bottom: 30px;">
-            לפרטים נוספים, ייעוץ אדריכלי או תיאום פגישה, נשמח לעמוד לרשותכם.
-        </p>
-        
-        <div class="social-links" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+    <div class="footer-overlay">
+        <div class="container">
+            <h3 style="margin-top: 0;">צור קשר | Contact Us</h3>
+            <p style="color: #d8c8b8; margin-bottom: 30px; font-size: 1.2em;">
+                לפרטים נוספים, ייעוץ אדריכלי או תיאום פגישה, נשמח לעמוד לרשותכם.
+            </p>
             
-            <a href="https://wa.me/972509392421" class="social-btn" target="_blank">
-                <i class="fab fa-whatsapp" style="color: #25D366; margin-left: 8px;"></i> WhatsApp
-            </a>
+            <div class="social-links">
+                <a href="https://wa.me/972509392421" class="social-btn" target="_blank">
+                    <i class="fab fa-whatsapp" style="margin-left: 10px;"></i> WhatsApp
+                </a>
 
-            <a href="https://www.facebook.com/niv.aviv.5" class="social-btn" target="_blank">
-                <i class="fab fa-facebook-f" style="color: #1877F2; margin-left: 8px;"></i> Facebook
-            </a>
+                <a href="https://www.facebook.com/niv.aviv.5" class="social-btn" target="_blank">
+                    <i class="fab fa-facebook-f" style="margin-left: 10px;"></i> Facebook
+                </a>
 
-            <a href="https://www.instagram.com/niv_dahan___/" class="social-btn" target="_blank">
-                <i class="fab fa-instagram" style="color: #E4405F; margin-left: 8px;"></i> Instagram
-            </a>
+                <a href="https://www.instagram.com/niv_dahan___/" class="social-btn" target="_blank">
+                    <i class="fab fa-instagram" style="margin-left: 10px;"></i> Instagram
+                </a>
 
-            <a href="mailto:Mrtadelakt@gmail.com" class="social-btn">
-                <i class="far fa-envelope" style="color: #EA4335; margin-left: 8px;"></i> Email
-            </a>
-
+                <a href="mailto:Mrtadelakt@gmail.com" class="social-btn">
+                    <i class="far fa-envelope" style="margin-left: 10px;"></i> Email
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-    // סקריפט קטן וחכם לסגירת אקורדיונים אחרים כשפותחים אחד
+    // סקריפט לסגירת אקורדיונים אחרים כשפותחים אחד - מעניק חוויה נקייה יותר
     const accordions = document.querySelectorAll('.accordion');
     
     accordions.forEach(acc => {
         acc.addEventListener('click', (e) => {
+            // מאפשר את האנימציה של האייקון לפני שסוגר את השאר
             if (acc.open) {
                 return;
             }
