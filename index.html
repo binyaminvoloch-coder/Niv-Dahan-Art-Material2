@@ -59,7 +59,7 @@
       "email": "Mrtadelakt@gmail.com",
       "sameAs": [
         "https://www.facebook.com/niv.aviv.5",
-        "https://www.instagram.com/niv_dahan_tadelakt/"
+        "                                       "
       ],
       "knowsAbout": [
         "Tadelakt",
@@ -76,7 +76,7 @@
     </script>
 
     <!-- פונטים -->
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <link href="                                                           ;400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
@@ -101,60 +101,31 @@
             background-color: #1a1a1a; /* צבע רקע בסיסי כהה לפני שהתמונה נטענת */
         }
 
-        /* סקשן תמונה ראשית בלבד - התאמה לזום ולמובייל */
+        /* סקשן תמונה ראשית בלבד */
         .hero-section {
             height: 100vh; /* גובה מלא של מסך הצפייה */
-            background: url('01.jpg') center/cover no-repeat fixed; /* 'cover' יבטיח שהתמונה תכסה את השטח, אך נוכל לשלוט על הפוקוס עם 'background-position' */
-            background-size: cover; /* וודא שהתמונה מכסה תמיד */
-            background-position: center; /* התחל ממרכז התמונה */
+            background: url('01.jpg') center/cover no-repeat fixed;
             display: flex; /* למיקום מרכזי אם יהיה תוכן בעתיד */
             align-items: center;
             justify-content: center;
             position: relative;
             z-index: 1; /* וודא שהיא מעל כל דבר אחר אם יהיה צורך */
         }
-        
-        /* התאמה נוספת לזום החוצה עבור תמונת הגיבור */
-        @media (min-width: 1200px) { /* עבור מסכים גדולים יותר */
-            .hero-section {
-                background-size: 110%; /* זום קצת החוצה */
-                background-position: center top; /* פוקוס יותר כלפי מעלה */
-            }
-        }
-        @media (max-width: 768px) { /* למובייל וטאבלטים */
-            .hero-section {
-                background-attachment: scroll; /* בטל פאראלקס במובייל לביצועים טובים יותר */
-                background-size: auto 100%; /* התמונה תכסה את הגובה, ותתאים את הרוחב באופן יחסי */
-                background-position: center; /* שמור על מרכז התמונה */
-            }
-        }
-        @media (max-width: 480px) { /* למובייל קטן במיוחד */
-            .hero-section {
-                background-size: 120% auto; /* זום מעט החוצה אנכית אם צריך */
-                background-position: center;
-            }
-        }
 
-
-        /* רקעים עם אפקט פאראלקס חי - התאמה למובייל */
-        .section-bg-02, .section-bg-03, .section-bg-04 {
-            background: url('02.jpg') center/cover no-repeat fixed; /* ברירת מחדל */
+        /* רקעים עם אפקט פאראלקס חי */
+        .section-bg-02 {
+            background: url('02.jpg') center/cover no-repeat fixed;
             padding: 100px 20px;
         }
 
         .section-bg-03 {
             background: url('03.jpg') center/cover no-repeat fixed;
+            padding: 100px 20px;
         }
 
         .section-bg-04 {
             background: url('04.jpg') center/cover no-repeat fixed;
-        }
-
-        @media (max-width: 768px) {
-            .section-bg-02, .section-bg-03, .section-bg-04 {
-                background-attachment: scroll; /* בטל פאראלקס במובייל */
-                background-position: center center; /* וודא שהתמונה ממוקדת */
-            }
+            padding: 100px 20px;
         }
 
         .container {
@@ -471,48 +442,14 @@
             border-radius: 20px 0 20px 0;
         }
 
-        /* התאמות למובייל */
         @media (max-width: 600px) {
-            body {
-                font-size: 17px; /* גודל פונט קטן יותר למובייל */
-            }
             h1 { font-size: 2.8em; }
-            h2 { font-size: 1.4em; letter-spacing: 2px; }
-            h3 { font-size: 2em; }
-            .english-title { font-size: 1.2em; }
             .content-box { 
-                padding: 40px 20px 25px 20px; /* ריווח קטן יותר */
+                padding: 50px 25px 30px 25px; 
                 border-radius: 50% 50% 0 0 / 8% 8% 0 0;
             }
-            .content-box::before { /* התאמת האלמנט הפנימי */
-                top: 15px; left: 15px; right: 15px;
-                border-radius: 50% 50% 0 0 / 6% 6% 0 0;
-            }
-            summary { 
-                font-size: 1.2em; 
-                padding: 20px 15px; 
-                flex-direction: row-reverse; /* כדי שהאייקון יהיה מצד ימין */
-                text-align: right;
-            }
-            .toggle-icon { margin-left: 15px; margin-right: 0; } /* ריווח לאייקון */
-            ul li { padding-right: 25px; } /* ריווח לרשימות */
-            ul li::before { top: 6px; width: 10px; height: 10px; }
-            .highlight-quote { font-size: 1.6em; margin: 1.5em 0; }
-            .social-btn { 
-                width: 90%; /* כפתורים ברוחב מלא כמעט */
-                margin: 5px auto; /* ריווח בין כפתורים */
-            }
-            .footer-overlay { padding: 60px 15px; }
-        }
-
-        @media (max-width: 400px) {
-            h1 { font-size: 2.2em; }
-            h2 { font-size: 1.2em; letter-spacing: 1px; }
-            h3 { font-size: 1.8em; }
-            .content-box { padding: 30px 15px 20px 15px; }
-            summary { font-size: 1.1em; padding: 15px 10px; }
-            .toggle-icon { width: 30px; height: 30px; }
-            .social-btn { font-size: 1em; padding: 12px 20px; }
+            summary { font-size: 1.2em; padding: 20px 15px; }
+            .social-btn { width: 100%; }
         }
     </style>
 </head>
@@ -1062,7 +999,7 @@
                     <i class="fab fa-facebook-f" style="margin-left: 10px;"></i> Facebook
                 </a>
 
-                <a href="https://www.instagram.com/niv_dahan_tadelakt/" class="social-btn" target="_blank">
+                <a href="                                       " class="social-btn" target="_blank">
                     <i class="fab fa-instagram" style="margin-left: 10px;"></i> Instagram
                 </a>
 
