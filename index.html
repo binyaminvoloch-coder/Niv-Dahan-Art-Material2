@@ -101,6 +101,17 @@
             background-color: #1a1a1a; /* צבע רקע בסיסי כהה לפני שהתמונה נטענת */
         }
 
+        /* סקשן תמונה ראשית בלבד */
+        .hero-section {
+            height: 100vh; /* גובה מלא של מסך הצפייה */
+            background: url('01.jpg') center/cover no-repeat fixed;
+            display: flex; /* למיקום מרכזי אם יהיה תוכן בעתיד */
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1; /* וודא שהיא מעל כל דבר אחר אם יהיה צורך */
+        }
+
         /* רקעים עם אפקט פאראלקס חי */
         .section-bg-02 {
             background: url('02.jpg') center/cover no-repeat fixed;
@@ -444,7 +455,12 @@
 </head>
 <body>
 
-<!-- אזור 1: פתיח ורקע ראשון -->
+<!-- אזור תמונה ראשית בלבד -->
+<div class="hero-section">
+    <!-- אין תוכן כאן, רק תמונת רקע 01.jpg -->
+</div>
+
+<!-- אזור 1: פתיח ורקע ראשון (מתחיל אחרי התמונה הראשית) -->
 <div class="section-bg-02">
     <div class="container">
         <div class="content-box">
@@ -685,7 +701,7 @@
             </details>
         </div>
 
-        <!-- קטלוג הטיחים -->
+        <!-- קטלוג הטיחים - הכותרת המעודכנת -->
         <h2 style="font-size: 3em; margin: 2em 0 1em 0;">פורמולות טיח מינרליים מבוססות סיד ביצור עצמי</h2>
 
         <details class="accordion">
