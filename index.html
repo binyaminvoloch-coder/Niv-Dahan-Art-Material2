@@ -35,8 +35,8 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="בוטיק בונים בנחת | Niv Dahan">
-    <meta name="twitter:description" content="אמן טדלקט מרוקאי ומומחה לטיח מינרלי ובנייה טבעית.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/refs/heads/main/50.jpg">
+    <meta property="twitter:description" content="אמן טדלקט מרוקאי ומומחה לטיח מינרלי ובנייה טבעית.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/refs/heads/main/50.jpg">
 
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/binyaminvoloch-coder/Niv-Dahan-Art-Material2/main/favicon.png">
 
@@ -59,7 +59,7 @@
       "email": "Mrtadelakt@gmail.com",
       "sameAs": [
         "https://www.facebook.com/niv.aviv.5",
-        "                                       "
+        "https://www.instagram.com/niv_dahan___/"
       ],
       "knowsAbout": [
         "Tadelakt",
@@ -76,7 +76,7 @@
     </script>
 
     <!-- פונטים -->
-    <link href="                                                           ;400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
@@ -85,9 +85,9 @@
             --gold: #c39b5b; 
             --dark-gold: #8c682e;
             --text-color: #31231e; 
-            /* שכבת זכוכית שקופה המאפשרת לראות את הרקע */
             --glass-bg: rgba(249, 244, 236, 0.75); 
             --glass-border: rgba(195, 155, 91, 0.3);
+            --footer-bg: rgba(30, 22, 18, 0.9);
         }
 
         body {
@@ -98,34 +98,134 @@
             padding: 0;
             font-size: 19px;
             font-weight: 400;
-            background-color: #1a1a1a; /* צבע רקע בסיסי כהה לפני שהתמונה נטענת */
+            background-color: #1a1a1a;
         }
 
-        /* סקשן תמונה ראשית בלבד */
+        /* סקשן תמונה ראשית - כולל לוגו וטקסט */
         .hero-section {
-            height: 100vh; /* גובה מלא של מסך הצפייה */
+            height: 100vh;
             background: url('01.jpg') center/cover no-repeat fixed;
-            display: flex; /* למיקום מרכזי אם יהיה תוכן בעתיד */
+            background-size: cover; /* Fallback for older browsers */
+            background-position: center; /* Default position */
+            display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            z-index: 1; /* וודא שהיא מעל כל דבר אחר אם יהיה צורך */
+            z-index: 1;
+            text-align: center; /* Centering text content */
+            padding: 20px; /* Some padding to prevent content touching edges */
+            box-sizing: border-box; /* Include padding in element's total width and height */
         }
 
-        /* רקעים עם אפקט פאראלקס חי */
-        .section-bg-02 {
+        /* שכבת הצללה עדינה כדי שהטקסט יהיה קריא יותר על התמונה */
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.3); /* צבע שחור שקוף 30% */
+            padding: 30px; /* ריווח סביב התוכן בתוך האוברליי */
+            border-radius: 15px; /* פינות מעוגלות */
+            max-width: 800px; /* הגבלת רוחב התוכן */
+            width: 90%; /* כדי שיתאים גם למובייל */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* צל עדין */
+            color: #f7f1e6; /* צבע טקסט בהיר על רקע כהה */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* צל לטקסט */
+        }
+        
+        .hero-overlay h1 {
+            color: #fff; /* צבע לבן לכותרת הראשית על רקע כהה */
+            text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+            font-size: 4.5em; /* גודל גדול יותר לכותרת הראשית */
+            margin-bottom: 0.2em;
+        }
+        .hero-overlay h2 {
+            color: var(--gold); /* זהב לכותרת המשנה */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+            font-size: 1.8em;
+            letter-spacing: 4px;
+        }
+        .hero-overlay .english-title {
+            color: var(--gold);
+            font-size: 1.6em;
+        }
+        .hero-overlay p {
+            color: #d8c8b8; /* צבע בהיר לפסקאות */
+            font-size: 1.2em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        }
+
+        /* מיקום הלוגו */
+        .hero-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px; /* גודל ברירת מחדל ללוגו */
+            height: auto;
+            max-width: 80%; /* וודא שהלוגו לא גדול מדי במובייל */
+            z-index: 2; /* מעל האוברליי */
+        }
+
+        /* התאמה לזום החוצה עבור תמונת הגיבור במסכים גדולים */
+        @media (min-width: 1200px) {
+            .hero-section {
+                background-size: 110%; /* זום קצת החוצה */
+                background-position: center top; /* פוקוס יותר כלפי מעלה */
+            }
+            .hero-overlay {
+                padding: 50px; /* ריווח גדול יותר במסכים גדולים */
+            }
+        }
+        /* למובייל וטאבלטים */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-attachment: scroll; /* בטל פאראלקס במובייל לביצועים טובים יותר */
+                background-size: auto 100%; /* התמונה תכסה את הגובה, ותתאים את הרוחב באופן יחסי */
+                background-position: center; /* שמור על מרכז התמונה */
+            }
+            .hero-overlay {
+                padding: 20px; /* ריווח קטן יותר במובייל */
+                width: 95%; /* שימוש ברוב רוחב המסך */
+            }
+            .hero-overlay h1 { font-size: 3.2em; }
+            .hero-overlay h2 { font-size: 1.5em; letter-spacing: 2px; }
+            .hero-overlay .english-title { font-size: 1.3em; }
+            .hero-overlay p { font-size: 1.1em; }
+            .hero-logo {
+                width: 200px; /* לוגו קטן יותר במובייל */
+            }
+        }
+        /* למובייל קטן במיוחד */
+        @media (max-width: 480px) {
+            .hero-section {
+                background-size: 120% auto; /* זום מעט החוצה אנכית אם צריך */
+                background-position: center;
+            }
+            .hero-overlay h1 { font-size: 2.5em; }
+            .hero-overlay h2 { font-size: 1.2em; letter-spacing: 1px; }
+            .hero-overlay .english-title { font-size: 1.1em; }
+            .hero-overlay p { font-size: 1em; }
+            .hero-logo {
+                width: 150px; /* לוגו עוד יותר קטן במובייל קטן */
+            }
+        }
+
+        /* רקעים עם אפקט פאראלקס חי - התאמה למובייל */
+        .section-bg-02, .section-bg-03, .section-bg-04 {
             background: url('02.jpg') center/cover no-repeat fixed;
             padding: 100px 20px;
         }
 
         .section-bg-03 {
             background: url('03.jpg') center/cover no-repeat fixed;
-            padding: 100px 20px;
         }
 
         .section-bg-04 {
             background: url('04.jpg') center/cover no-repeat fixed;
-            padding: 100px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .section-bg-02, .section-bg-03, .section-bg-04 {
+                background-attachment: scroll;
+                background-position: center center;
+            }
         }
 
         .container {
@@ -136,10 +236,9 @@
         /* קופסאות זכוכית בצורת קשת אדריכלית */
         .content-box {
             background: var(--glass-bg);
-            backdrop-filter: blur(12px); /* אפקט זכוכית חלבית */
+            backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             padding: 70px 50px;
-            /* צורת קשת מורית עליונה */
             border-radius: 50% 50% 0 0 / 12% 12% 0 0;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), inset 0 0 20px rgba(255,255,255,0.5);
             margin-bottom: 60px;
@@ -148,7 +247,6 @@
             border-bottom: 4px solid var(--terracotta);
         }
 
-        /* אלמנט עיצובי פנימי של הקשת */
         .content-box::before {
             content: '';
             position: absolute;
@@ -254,7 +352,7 @@
             width: 12px;
             height: 12px;
             background-color: var(--terracotta);
-            border-radius: 50% 50% 0 50%; /* צורת טיפה/עלה מינרלי */
+            border-radius: 50% 50% 0 50%;
             transform: rotate(45deg);
             opacity: 0.8;
         }
@@ -322,10 +420,9 @@
         }
 
         summary::-webkit-details-marker {
-            display: none; /* מסתיר את המשולש של גוגל */
+            display: none;
         }
 
-        /* האייקון היוקרתי - מעגל עם פלוס/מינוס */
         .toggle-icon {
             width: 35px;
             height: 35px;
@@ -357,7 +454,6 @@
             height: 15px;
         }
 
-        /* אנימציה כשהאקורדיון נפתח */
         details[open] summary .toggle-icon {
             transform: rotate(180deg);
             background-color: var(--gold);
@@ -371,7 +467,7 @@
 
         details[open] summary .toggle-icon::after {
             transform: rotate(90deg);
-            opacity: 0; /* הופך למינוס */
+            opacity: 0;
         }
 
         details[open] summary {
@@ -397,7 +493,7 @@
         }
         
         .footer-overlay {
-            background: rgba(30, 22, 18, 0.9); /* שכבה כהה ואלגנטית */
+            background: var(--footer-bg);
             padding: 80px 20px;
             border-top: 3px solid var(--gold);
             text-align: center;
@@ -422,12 +518,12 @@
             align-items: center;
             justify-content: center;
             padding: 15px 30px;
-            background: transparent;
+            background: transparent; /* ללא רקע */
             color: var(--gold);
             text-decoration: none;
             font-weight: 600;
-            border: 1px solid var(--gold);
-            border-radius: 0 20px 0 20px; /* צורה אדריכלית עדינה */
+            border: none; /* הסרת המסגרת */
+            border-radius: 0; /* הסרת ה-border-radius */
             transition: all 0.4s ease;
             font-family: 'Cinzel', 'Assistant', sans-serif;
             font-size: 1.1em;
@@ -439,17 +535,51 @@
             color: #1e1612;
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(195, 155, 91, 0.2);
-            border-radius: 20px 0 20px 0;
+            border-radius: 20px; /* ניתן להחזיר פינות מעוגלות בלחיצה אם רוצים */
         }
 
+        /* התאמות למובייל */
         @media (max-width: 600px) {
+            body {
+                font-size: 17px;
+            }
             h1 { font-size: 2.8em; }
+            h2 { font-size: 1.4em; letter-spacing: 2px; }
+            h3 { font-size: 2em; }
+            .english-title { font-size: 1.2em; }
             .content-box { 
-                padding: 50px 25px 30px 25px; 
+                padding: 40px 20px 25px 20px;
                 border-radius: 50% 50% 0 0 / 8% 8% 0 0;
             }
-            summary { font-size: 1.2em; padding: 20px 15px; }
-            .social-btn { width: 100%; }
+            .content-box::before {
+                top: 15px; left: 15px; right: 15px;
+                border-radius: 50% 50% 0 0 / 6% 6% 0 0;
+            }
+            summary { 
+                font-size: 1.2em; 
+                padding: 20px 15px; 
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+            .toggle-icon { margin-left: 15px; margin-right: 0; }
+            ul li { padding-right: 25px; }
+            ul li::before { top: 6px; width: 10px; height: 10px; }
+            .highlight-quote { font-size: 1.6em; margin: 1.5em 0; }
+            .social-btn { 
+                width: 90%;
+                margin: 5px auto;
+            }
+            .footer-overlay { padding: 60px 15px; }
+        }
+
+        @media (max-width: 400px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.2em; letter-spacing: 1px; }
+            h3 { font-size: 1.8em; }
+            .content-box { padding: 30px 15px 20px 15px; }
+            summary { font-size: 1.1em; padding: 15px 10px; }
+            .toggle-icon { width: 30px; height: 30px; }
+            .social-btn { font-size: 1em; padding: 12px 20px; }
         }
     </style>
 </head>
@@ -457,11 +587,29 @@
 
 <!-- אזור תמונה ראשית בלבד -->
 <div class="hero-section">
-    <!-- אין תוכן כאן, רק תמונת רקע 01.jpg -->
+    <div class="hero-overlay">
+        <!-- התוכן של האזור הראשון, עכשיו בתוך שכבת האוברליי -->
+        <header>
+            <h1 style="color: #fff;">בוטיק בונים בְּנַחַת</h1>
+            <h2 style="color: var(--gold);">Tadelakt original made in Marrakesh</h2>
+            <div class="english-title" style="margin-bottom: 2em; color: var(--gold);">
+                Niv Dahan<br>
+                <span style="font-size: 0.8em; color: var(--terracotta);">International Moroccan Tadelakt Artist</span>
+            </div>
+
+            <div style="text-align: center; font-size: 1.2em; font-weight: 600; color: #d8c8b8;">
+                <p style="text-align: center;">יוצר וחוקר אומניות וטכניקות קישוט עתיקות מבוססות סיד<br>
+                ומתמחה בשימור ושחזור מבנים בטיח מרוקאי ובנייה טבעית.</p>
+                <p style="text-align: center;">אני משלב בין מסורת עתיקה לאדריכלות עכשווית בחומרים עתיקים במלאכת יד ואדריכלות חיה שמספרת סיפור.</p>
+            </div>
+        </header>
+    </div>
+    <!-- הלוגו שלך, אם הוא תמונה נפרדת. אם הוא חלק מתמונת הרקע, מחק את זה. -->
+    <!-- <img src="logo.png" alt="בוטיק בונים בנחת לוגו" class="hero-logo"> -->
 </div>
 
-<!-- אזור 1: פתיח ורקע ראשון (מתחיל אחרי התמונה הראשית) -->
-<div class="section-bg-02">
+<!-- אזור 1: פתיח ורקע ראשון - תוכן זה הועבר לתוך ה-hero-section -->
+<!-- <div class="section-bg-02">
     <div class="container">
         <div class="content-box">
             <header>
@@ -480,7 +628,7 @@
             </header>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- אזור 2: אודות, דרך אישית וחומרים -->
 <div class="section-bg-03">
@@ -999,7 +1147,7 @@
                     <i class="fab fa-facebook-f" style="margin-left: 10px;"></i> Facebook
                 </a>
 
-                <a href="                                       " class="social-btn" target="_blank">
+                <a href="https://www.instagram.com/niv_dahan___/" class="social-btn" target="_blank">
                     <i class="fab fa-instagram" style="margin-left: 10px;"></i> Instagram
                 </a>
 
@@ -1012,12 +1160,10 @@
 </div>
 
 <script>
-    // סקריפט לסגירת אקורדיונים אחרים כשפותחים אחד - מעניק חוויה נקייה יותר
     const accordions = document.querySelectorAll('.accordion');
     
     accordions.forEach(acc => {
         acc.addEventListener('click', (e) => {
-            // מאפשר את האנימציה של האייקון לפני שסוגר את השאר
             if (acc.open) {
                 return;
             }
