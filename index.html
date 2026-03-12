@@ -76,7 +76,7 @@
     </script>
 
     <!-- פונטים -->
-    <link href="                                                           ;400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
@@ -426,8 +426,8 @@
             color: var(--gold);
             text-decoration: none;
             font-weight: 600;
-            border: 1px solid var(--gold);
-            border-radius: 0 20px 0 20px; /* צורה אדריכלית עדינה */
+            border: none; /* הסרת המסגרת */
+            border-radius: 0; /* הסרת הפינות המעוגלות כברירת מחדל */
             transition: all 0.4s ease;
             font-family: 'Cinzel', 'Assistant', sans-serif;
             font-size: 1.1em;
@@ -439,7 +439,7 @@
             color: #1e1612;
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(195, 155, 91, 0.2);
-            border-radius: 20px 0 20px 0;
+            border-radius: 20px 0 20px 0; /* שמירת האפקט הוויזואלי במעבר עכבר */
         }
 
         @media (max-width: 600px) {
@@ -584,7 +584,7 @@
 
             <details class="accordion">
                 <summary>
-                    <span class="english-title" style="margin:0; font-size: 1em; letter-spacing: 0;">Materials</span> - החומרים בהם אנו עובדים
+                    <span class="english-title" style="margin:0; font-size: 1em; letter-spacing:0;">Materials</span> - החומרים בהם אנו עובדים
                     <div class="toggle-icon"></div>
                 </summary>
                 <div class="details-content">
@@ -999,7 +999,7 @@
                     <i class="fab fa-facebook-f" style="margin-left: 10px;"></i> Facebook
                 </a>
 
-                <a href="https://www.instagram.com/niv_dahan___/" class="social-btn" target="_blank">
+                <a href="                                       " class="social-btn" target="_blank">
                     <i class="fab fa-instagram" style="margin-left: 10px;"></i> Instagram
                 </a>
 
@@ -1010,7 +1010,7 @@
         </div>
     </div>
 </div>
-    
+
 <script>
     // סקריפט לסגירת אקורדיונים אחרים כשפותחים אחד - מעניק חוויה נקייה יותר
     const accordions = document.querySelectorAll('.accordion');
