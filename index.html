@@ -104,7 +104,17 @@
         /* סקשן תמונה ראשית בלבד */
         .hero-section {
             height: 100vh; /* גובה מלא של מסך הצפייה בדסקטופ */
-            background: url('01.jpg') center/cover no-repeat fixed; /* התמונה והמיקום הרגילים לדסקטופ */
+            background-image: url('01.jpg'); /* הוספנו כדי להפריד את המאפיינים */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /* ======== כאן השינוי להנמכת התמונה בדסקטופ ======== */
+            background-position: center 20%; /* שינוי מ-center (שהוא center center) ל-center 20% */
+                                            /* אתה יכול לשחק עם ה-20% לערכים אחרים כמו 25%, 30% וכו' */
+                                            /* ככל שהמספר גדול יותר, התמונה "תורד" למטה. */
+            /* ================================================= */
+
             display: flex; /* למיקום מרכזי אם יהיה תוכן בעתיד */
             align-items: center;
             justify-content: center;
